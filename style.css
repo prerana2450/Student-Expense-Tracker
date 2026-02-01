@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f8;
+  background: url("images/background.jpg")
+  no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+header {
+  background: #4f46e5;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero.header{
+  height: 280px;
+  background: url("images/header-bg.jpg")no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-header .overlay{
+   color: white;
+   text-align: center;
+   padding: 20px;
+   width: 100%;
+}
+
+.hero-header h1{
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4338ca;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.total {
+  text-align: center;
+  background: #e0e7ff;
+}
+
+.total p {
+  font-size: 24px;
+  font-weight: bold;
+}
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+#monthFilter {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+canvas {
+  width: 100% !important;
+  max-height: 300px;
+}
+/* Theme Toggle Button */
+#themeToggle {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Dark Mode */
+.dark body {
+  background: #111827;
+  color: #f9fafb;
+}
+
+.dark header {
+  background: #1f2933;
+}
+
+.dark .card {
+  background: #1f2937;
+  color: #f9fafb;
+}
+
+.dark input,
+.dark select {
+  background: #374151;
+  color: white;
+  border: 1px solid #4b5563;
+}
+
+.dark button {
+  background: #6366f1;
+}
+
+.dark ul li {
+  border-bottom: 1px solid #4b5563;
+}
+
+.card-img{
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.dark .card-img{
+    opacity: 0.9;
+}

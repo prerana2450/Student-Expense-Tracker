@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="hero-header"> 
+    <div class="overlay">
+    <h1>💸 Student Expense Tracker</h1>
+    <p>Track your daily spending easily</p>
+    <button id="themeToggle"
+    onclick="toggleTheme()">🌙 Dark Mode</button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Add Expense Card -->
+    <div class="card">
+        <img src="images/expense-card.png"
+        class="card-img" alt="Expense Image">
+      <h2>Add New Expense</h2>
+      <!-- Month Filter -->
+<select id="monthFilter" onchange="filterByMonth()">
+  <option value="">All Months</option>
+  <option value="01">January</option>
+  <option value="02">February</option>
+  <option value="03">March</option>
+  <option value="04">April</option>
+  <option value="05">May</option>
+  <option value="06">June</option>
+  <option value="07">July</option>
+  <option value="08">August</option>
+  <option value="09">September</option>
+  <option value="10">October</option>
+  <option value="11">November</option>
+  <option value="12">December</option>
+</select>
+      <input type="number" id="amount" placeholder="Amount ₹">
+      
+      <select id="category">
+        <option value="">Select Category</option>
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Study</option>
+        <option>Other</option>
+      </select>
+
+      <input type="date" id="date">
+
+      <button onclick="addExpense()">Add Expense</button>
+    </div>
+
+    <!-- Expense List -->
+    <div class="card">
+      <h2>Expense List</h2>
+      <ul id="expenseList"></ul>
+    </div>
+
+    <!-- Total Expense -->
+    <div class="card total">
+      <h2>Total Expense</h2>
+      <p>₹ <span id="totalAmount">0</span></p>
+    </div>
+
+  </div>
+<div class="card">
+  <h2>Expense Chart</h2>
+  <canvas id="expenseChart"></canvas>
+</div>
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
